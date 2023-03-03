@@ -1,0 +1,48 @@
+#include <stdbool.h>
+
+typedef struct node
+{
+    int value;
+    struct  node* next;
+}NODE;
+
+void printList(NODE* head);
+
+NODE* insertAtHead(NODE* head, int newValue);
+NODE* insertaAtTheTail(NODE* head, int newValue);
+
+NODE* deleteAtTheHead(NODE* head);
+NODE* deletingAtTheTail(NODE* head);
+
+int lenghtList(NODE* head);
+int lenghtListRecursive(NODE* node);
+
+bool findValueRecursive(NODE* node, int findValue);
+int findMacthesRecursive(NODE* node, int findValue);
+void replaceValuesRecursive(NODE* node, int findValue, int replaceValue);
+
+NODE* deleteFirstMatch(NODE* head, int deleteValue, bool* wasDeleted);
+NODE* deleteAllTheMatch(NODE* head, int deleteValue, int* countNumberDelete);
+NODE* deleteAllTheMatchEfficient(NODE* head, int deleteValue, int* countNumberDelete);
+
+NODE* appendLists(NODE* head1, NODE* head2);
+NODE* reversingList(NODE* head);
+
+void bubbleSortList(NODE* head);
+
+void removeDuplicades(NODE* head, int* countDuplicades);
+
+NODE* insertAfter(NODE* head, int newValue, int valueAfter);
+
+NODE* deleteList(NODE* node);
+
+////// --> QuickSort <-- ///////
+
+NODE* quickSortLinkedList(NODE* head, NODE* tail);
+NODE* partitionLinkedList(NODE* head, NODE* tail, NODE** newHead, NODE** newTail);
+NODE* getLastNode(NODE* head);
+void swapTwoNodesLinkedList(NODE* a, NODE* b);
+
+// ******* //
+
+NODE * populateList(NODE * list);
